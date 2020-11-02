@@ -61,10 +61,6 @@ body {
   display: flex;
 }
 
-.sections {
-  transition: all 0.4s ease-out;
-}
-
 #section1 {
   background-color: green;
 }

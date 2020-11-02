@@ -36,3 +36,11 @@ window.addEventListener("wheel", function (event) {
     return;
   }
 });
+
+$('input[type=radio][name=grupo]').change(function() {
+  $(".caravanita").fadeOut();
+  var sectionNewClick = $("input[name=grupo]:checked").prop("id");
+  setTimeout(function () {
+  $("." + sectionNewClick).fadeIn();
+}, 400);
+});
