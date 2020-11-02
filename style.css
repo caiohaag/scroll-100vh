@@ -30,6 +30,10 @@ body {
   display: none;
 }
 
+.selected {
+    border: white solid 1px;
+}
+
 .bloco {
   width: 100vw;
   height: 100vh;
