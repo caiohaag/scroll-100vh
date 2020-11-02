@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.links {
+    width: 300px;
+    height: 200px;
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.links label {
+    padding: 10px 0;
+    flex-grow: 1;
+    text-align: center;
+    cursor: pointer;
+    transition: all .4s;
+    color: white;
+}
+
+.links label:hover {
+    background-color: rgb(255,255,255,0.2);
+}
+
+.scroll input {
+    display: none;
+}
+
+.bloco {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#link2:checked ~ .sections{
+    margin-top: -100vh;
+}
+
+#link3:checked ~ .sections{
+    margin-top: -200vh;
+}
+
+#link4:checked ~ .sections{
+    margin-top: -300vh;
+}
+
+#link5:checked ~ .sections{
+    margin-top: -400vh;
+}
+
+.scroll {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+}
+
+.sections {
+    transition: all .4s ease-out;
+}
+
+#section1 {
+    background-color: green;
+}
+
+#section2 {
+    background-color: red;
+}
+
+#section3 {
+    background-color: pink;
+}
+
+#section4 {
+    background-color: yellow;
+}
+
+#section5 {
+    background-color: aqua;
+}
+
+.link2, .link3, .link4, .link5 {
+    display: none;
+}
