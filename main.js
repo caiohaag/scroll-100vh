@@ -10,11 +10,11 @@ window.addEventListener("wheel", function (event) {
     $("input[name=grupo]:checked")
       .prevAll(":radio:first")
       .prop("checked", true);
-      var sectionNew = $("input[name=grupo]:checked").prop("id");
-      setTimeout(function() {
-        $("." + sectionNew).fadeIn();
-      }, 400);
-    setTimeout(function() {
+    var sectionNew = $("input[name=grupo]:checked").prop("id");
+    setTimeout(function () {
+      $("." + sectionNew).fadeIn();
+    }, 400);
+    setTimeout(function () {
       sectionScroll = false;
     }, 1000);
     return;
@@ -26,11 +26,11 @@ window.addEventListener("wheel", function (event) {
     $("input[name=grupo]:checked")
       .nextAll(":radio:first")
       .prop("checked", true);
-      var sectionNew = $("input[name=grupo]:checked").prop("id");
-      setTimeout(function() {
-        $("." + sectionNew).fadeIn();
-      }, 400);
-    setTimeout(function() {
+    var sectionNew = $("input[name=grupo]:checked").prop("id");
+    setTimeout(function () {
+      $("." + sectionNew).fadeIn();
+    }, 400);
+    setTimeout(function () {
       sectionScroll = false;
     }, 1000);
     return;
