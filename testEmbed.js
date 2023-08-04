@@ -1,9 +1,15 @@
-console.log('working well');
+setTimeout(() => {
+    console.log('Redirecting in 3...');
+  }, 1000)
 
-const header = document.getElementById('unsetGridHeader');
+setTimeout(() => {
+    console.log('Redirecting in 2...');
+  }, 2000)
 
-header.remove();
+setTimeout(() => {
+    console.log('Redirecting in 1...');
+  }, 3000)
 
 setTimeout(() => {
     window.location.href = "http://www.google.com.br";
-  }, 2000)
+  }, 4000)
